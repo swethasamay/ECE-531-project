@@ -5,7 +5,7 @@ chmod +x scriptName.sh
 
 
 
-* Database information
+* Database information: 
 Database created is named 'consoles'. It is a 'console' named table that contains id and name as columns. 
 
 
