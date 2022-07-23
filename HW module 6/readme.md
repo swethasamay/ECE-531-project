@@ -1,5 +1,5 @@
 
-* Commands for running the script
+* Commands for running the script: 
 chmod +x scriptName.sh
 ./script.sh
 
