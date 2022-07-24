@@ -5,10 +5,7 @@ import fi.iki.elonen.NanoHTTPD.IHTTPSession;
 import fi.iki.elonen.NanoHTTPD.Response;
 import java.io.IOException;
 
-/**
- * Base application class for setting up NanoHTTPD server
- 
- */
+
 public class SwethaServer extends NanoHTTPD {
 
     private JDBCConnection connection;
@@ -22,7 +19,7 @@ public class SwethaServer extends NanoHTTPD {
     public static void main(String[] args) {
         try {
 
-            // create new instance of server
+            // create new instance 
             new SwethaServer();
         } catch (IOException ioe) {
             System.err.println("Couldn't start server:\n" + ioe);
