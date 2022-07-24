@@ -7,7 +7,7 @@ chmod +x scriptName.sh
 
 
 * Database information: 
-Database created is named 'consoles'. It is a 'console' named table that contains id and name as columns. 
+Database created is named 'consoles'. It is a 'console' named table that contains age and name as columns. 
 
 
 * AWS EC2 instancecPublic IP is http://54.183.3.255:8080
