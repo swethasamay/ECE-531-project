@@ -12,17 +12,17 @@ public class JDBCConnection {
     private static final String ROOT = "root";
     private static final String PASSWORD = "Swetha$1";
 
-    // get request based on ID
-    public Console getConsole(String id) {
+    // get request based on Age
+    public Console getConsole(String age) {
 
-        String select = "select * from console where id = " + id;
+        String select = "select * from console where age = " + age;
         try ( Connection conn = setupConnection()) {
 
             Statement statement = conn.createStatement();
             ResultSet resultSet = statement.executeQuery(select);
             Console console = new Console();
             while (resultSet.next()) {
-                console.setId(resultSet.getLong("ID"));
+                console.setAge(resultSet.getLong("AGE"));
                 console.setName(resultSet.getString("NAME"));
             }
             return console;
@@ -44,7 +44,7 @@ public class JDBCConnection {
             while (resultSet.next()) {
 
                 Console obj = new Console();
-                obj.setId(resultSet.getLong("ID"));
+                obj.setAge(resultSet.getLong("AGE"));
                 obj.setName(resultSet.getString("NAME"));
 
                 consoles.add(obj);
@@ -71,8 +71,8 @@ public class JDBCConnection {
     }
 
     // delete console from database
-    public String deleteConsole(String id) {
-        String insert = "delete from console where id = " + id;
+    public String deleteConsole(String age) {
+        String insert = "delete from console where age = " + age;
         try ( Connection conn = setupConnection()) {
             Statement statement = (Statement) conn.createStatement();
             statement.execute(insert);
