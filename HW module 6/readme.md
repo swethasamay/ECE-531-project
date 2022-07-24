@@ -13,15 +13,15 @@ Database created is named 'consoles'. It is a 'console' named table that contain
 
 * Curl commands
 
-To get list of all the ojects: curl http://52.8.135.131:8080/ 
+To get list of all the ojects: curl http://54.183.3.255:8080/ 
 
-To get object based on ID: curl http://52.8.135.131:8080/id 
+To get object based on ID: curl http://54.183.3.255:8080/id 
 
-To post a record on to the database: curl -X POST http://52.8.135.131:8080/ id NAME
+To post a record on to the database: curl -X POST http://54.183.3.255:8080/ id NAME
 
-To put: curl -X PUT http://52.8.135.131:8080/ id NAME
+To put: curl -X PUT http://54.183.3.255:8080/ id NAME
 
-To delete an ID record:curl -X DELETE http://52.8.135.131:8080/id
+To delete an ID record:curl -X DELETE http://54.183.3.255:8080/id
 
 
 
