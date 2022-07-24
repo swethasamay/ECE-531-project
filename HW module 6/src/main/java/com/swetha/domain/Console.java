@@ -2,15 +2,15 @@ package com.swetha.domain;
 
 public class Console {
 
-    private Long id;
+    private Long age;
     private String name;
 
-    public Long getId() {
-        return id;
+    public Long getAge() {
+        return age;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setAge(Long age) {
+        this.age = age;
     }
 
     public String getName() {
