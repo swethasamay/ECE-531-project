@@ -32,7 +32,7 @@ public class JDBCConnection {
         return null;
     }
 
-    // get list of objects to fill a table
+    // get list of objects
     public List<Console> getConsoles() {
         List<Console> consoles = new ArrayList<>();
         String select = "select * from console";
@@ -57,7 +57,7 @@ public class JDBCConnection {
         return consoles;
     }
 
-    // add a console to the database
+    // add a console
     public String addConsole(String name) {
         String insert = "insert into console (name) values ('" + name + "')";
         try ( Connection conn = setupConnection()) {
@@ -70,7 +70,7 @@ public class JDBCConnection {
         return "Post Successful\n";
     }
 
-    // delete console from database
+    // delete console 
     public String deleteConsole(String age) {
         String insert = "delete from console where age = " + age;
         try ( Connection conn = setupConnection()) {
